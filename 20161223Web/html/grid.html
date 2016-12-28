@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网格系统</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="style.css">
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		  <div class="row">
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		  </div>
+		    <div class="row">
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		    <div class="col-md-1">.col-md-1</div>
+		  </div>
+		</div>
+		<br />
+		<br />
+		<div class="container">
+		  <div class="row">
+		    <div class="col-md-4">.col-md-4</div>
+		    <div class="col-md-8">.col-md-8</div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-4">.col-md-4</div>
+		    <div class="col-md-4">.col-md-4</div>
+		    <div class="col-md-4">.col-md-4</div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-3">.col-md-3</div>
+		    <div class="col-md-6">.col-md-6</div>
+		    <div class="col-md-3">.col-md-3</div>
+		  </div>
+		</div>
+		<br />
+		<!--列偏移-->
+		<div class="container">
+		<h4>列向右移动四列的间距</h4>
+		  <div class="row">
+		    <div class="col-md-4">.col-md-4</div>
+		    <div class="col-md-2 col-md-offset-4">列向右移动四列的间距</div>
+		    <div class="col-md-2">.col-md-2</div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-4">.col-md-4</div>
+		    <div class="col-md-4 col-md-offset-4">列向右移动四列的间距</div>
+		  </div>
+		</div>
+		<br />
+		<h4>发生行断裂</h4>
+		<div class="container">
+		  <div class="row">
+		    <div class="col-md-4">.col-md-4</div>
+		    <div class="col-md-2 col-md-offset-4">列向右移动四列的间距</div>
+		    <div class="col-md-2">.col-md-3</div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-4">.col-md-4</div>
+		    <div class="col-md-4 col-md-offset-4">列向右移动四列的间距</div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-3">.col-md-3</div>
+		    <div class="col-md-3 col-md-offset-3">col-md-offset-3发生行断裂</div>
+		    <div class="col-md-4">col-md-4</div>
+		  </div>
+		</div>
+		<!--列偏移-->
+		<br />
+		<div class="container">
+		  <div class="row">
+		    <div class="col-md-4 col-md-push-8">.col-md-4</div>
+		    <div class="col-md-8 col-md-pull-4">.col-md-8</div>
+		  </div>
+		</div>
+		<!--列的嵌套-->
+		<div class="container">
+		  <div class="row">
+		    <div class="col-md-8">
+		      我的里面嵌套了一个网格
+		      <div class="row">
+		        <div class="col-md-6">col-md-6</div>
+		        <div class="col-md-6">col-md-6</div>
+		      </div>
+		    </div>
+		    <div class="col-md-4">col-md-4</div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-4">.col-md-4</div>
+		    <div class="col-md-8">
+		      我的里面嵌套了一个网格
+		      <div class="row">
+		        <div class="col-md-4">col-md-4</div>
+		        <div class="col-md-4">col-md-4</div>
+		        <div class="col-md-4">col-md-4</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</body>
+</html>

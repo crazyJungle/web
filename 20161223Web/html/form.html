@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<form role="form">
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">邮箱：</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入您的邮箱地址">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">密码</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入您的邮箱密码">
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> 记住密码
+		    </label>
+		  </div>
+		  <button type="submit" class="btn btn-default">进入邮箱</button>
+		</form>	
+		
+		<!--水平表单-->
+		<form class="form-horizontal" role="form">
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
+		    <div class="col-sm-10">
+		      <input type="email" class="form-control" id="inputEmail3" placeholder="请输入您的邮箱地址">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+		    <div class="col-sm-10">
+		      <input type="password" class="form-control" id="inputPassword3" placeholder="请输入您的邮箱密码">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <div class="checkbox">
+		        <label>
+		          <input type="checkbox"> 记住密码
+		        </label>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button type="submit" class="btn btn-default">进入邮箱</button>
+		    </div>
+		  </div>
+		</form>
+		
+		<form class="form-inline" role="form">
+		  <div class="form-group">
+		    <label class="sr-only" for="exampleInputEmail2">邮箱</label>
+		    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="请输入你的邮箱地址">
+		  </div>
+		  <div class="form-group">
+		    <label class="sr-only" for="exampleInputPassword2">密码</label>
+		    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="请输入你的邮箱密码">
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> 记住密码
+		    </label>
+		  </div>
+		  <button type="submit" class="btn btn-default">进入邮箱</button>
+		</form>  
+		
+		<!--下拉选择框select-->
+		<form role="form">
+		  <div class="form-group">
+		    <select class="form-control"> 
+		      <option>1</option> 
+		      <option>2</option> 
+		      <option>3</option> 
+		      <option>4</option> 
+		      <option>5</option> 
+		      </select>
+		  </div>
+		  <div class="form-group">
+		      <select multiple class="form-control"> 
+		        <option>1</option> 
+		        <option>2</option> 
+		        <option>3</option> 
+		        <option>4</option> 
+		        <option>5</option> 
+		      </select>
+		  </div>
+		</form>   
+		
+		<!--文本域-->
+		<form role="form">
+		  <div class="form-group">
+		    <textarea class="form-control" rows="3"></textarea>
+		  </div>
+		</form>   
+		
+		<!--(复选框checkbox和单选择按钮radio-->
+		<form role="form">
+		  <h3>案例1</h3>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox" value="">
+		      记住密码
+		    </label>
+		  </div>
+		  <div class="radio">
+		    <label>
+		      <input type="radio" name="optionsRadios" id="optionsRadios1" value="love" checked>
+		      喜欢
+		    </label>
+		  </div>
+		    <div class="radio">
+		    <label>
+		      <input type="radio" name="optionsRadios" id="optionsRadios2" value="hate">
+		      不喜欢
+		    </label>
+		  </div>
+		</form> 
+		
+		<!--水平表单-->
+		<form role="form">
+		  <div class="form-group">
+		    <label class="checkbox-inline">
+		      <input type="checkbox"  value="option1">游戏
+		    </label>
+		    <label class="checkbox-inline">
+		      <input type="checkbox"  value="option2">摄影
+		    </label>
+		    <label class="checkbox-inline">
+		    <input type="checkbox"  value="option3">旅游
+		    </label>
+		  </div>
+		  <div class="form-group">
+		    <label class="radio-inline">
+		      <input type="radio"  value="option1" name="sex">男性
+		    </label>
+		    <label class="radio-inline">
+		      <input type="radio"  value="option2" name="sex">女性
+		    </label>
+		    <label class="radio-inline">
+		      <input type="radio"  value="option3" name="sex">中性
+		    </label>
+		  </div>
+		</form>
+		
+		<!--按钮-->
+		<table class="table table-bordered table-striped">  
+	    <thead>  
+	      <tr>  
+	        <th>Button</th>  
+	        <th>class=""</th>  
+	        <th>Description</th>  
+	      </tr>  
+	    </thead>  
+	    <tbody>  
+	      <tr>  
+	        <td><button class="btn" href="#">Default</button></td>  
+	        <td><code>btn</code></td>  
+	        <td>Standard gray button with gradient</td>  
+	      </tr>  
+	      <tr>  
+	        <td><button class="btn btn-primary" href="#">Primary</button></td>  
+	        <td><code>btn btn-primary</code></td>  
+	        <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>  
+	      </tr>  
+	      <tr>  
+	        <td><button class="btn btn-info" href="#">Info</button></td>  
+	        <td><code>btn btn-info</code></td>  
+	        <td>Used as an alternative to the default styles</td>  
+	      </tr>  
+	      <tr>  
+	        <td><button class="btn btn-success" href="#">Success</button></td>  
+	        <td><code>btn btn-success</code></td>  
+	        <td>Indicates a successful or positive action</td>  
+	      </tr>  
+	      <tr>  
+	        <td><button class="btn btn-warning" href="#">Warning</button></td>  
+	        <td><code>btn btn-warning</code></td>  
+	        <td>Indicates caution should be taken with this action</td>  
+	      </tr>  
+	      <tr>  
+	        <td><button class="btn btn-danger" href="#">Danger</button></td>  
+	        <td><code>btn btn-danger</code></td>  
+	        <td>Indicates a dangerous or potentially negative action</td>  
+	      </tr>  
+	      <tr>  
+	        <td><button class="btn btn-inverse" href="#">Inverse</button></td>  
+	        <td><code>btn btn-inverse</code></td>  
+	        <td>Alternate dark gray button, not tied to a semantic action or use</td>  
+	      </tr>  
+	    </tbody>  
+	  </table>    
+	  
+	  <h1>案例1</h1>
+		<form role="form">
+		  <div class="form-group">
+		    <label class="control-label">控件变大</label>
+		    <input class="form-control input-lg" type="text" placeholder="添加.input-lg，控件变大">
+		  </div>
+		  <div class="form-group">
+		    <label class="control-label">正常大小</label>
+		    <input class="form-control" type="text" placeholder="正常大小">
+		  </div>  
+		  <div class="form-group">
+		    <label class="control-label">控件变小</label>
+		    <input class="form-control input-sm" type="text" placeholder="添加.input-sm，控件变小">
+		  </div> 
+		</form> 
+		  <br>
+		  <br>
+		  <br>
+		 <h1>案例2</h1>
+		<form role="form" class="form-horizontal">
+		  <div class="form-group">
+		    <div class="col-xs-4">
+		      <input class="form-control input-lg" type="text" placeholder=".col-xs-4">
+		    </div>
+		    <div class="col-xs-4">
+		      <input class="form-control input-lg" type="text" placeholder=".col-xs-4">
+		    </div>
+		    <div class="col-xs-4">
+		      <input class="form-control input-lg" type="text" placeholder=".col-xs-4">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-xs-6"><input class="form-control" type="text" placeholder=".col-xs-6"></div>
+		    <div class="col-xs-6"><input class="form-control" type="text" placeholder=".col-xs-6"></div>
+		    
+		  </div>  
+		  <div class="form-group">
+		    <div class="col-xs-5">
+		      <input class="form-control input-sm" type="text" placeholder=".col-xs-5">
+		    </div>
+		    <div class="col-xs-7">
+		      <input class="form-control input-sm" type="text" placeholder=".col-xs-7">
+		    </div>
+		  </div> 
+		</form>
+		
+		<!--表单控件验证-->
+		<h3>示例1</h3>
+		<form role="form">
+		  <div class="form-group has-success">
+		    <label class="control-label" for="inputSuccess1">成功状态</label>
+		    <input type="text" class="form-control" id="inputSuccess1" placeholder="成功状态" >
+		  </div>
+		  <div class="form-group has-warning">
+		    <label class="control-label" for="inputWarning1">警告状态</label>
+		    <input type="text" class="form-control" id="inputWarning1" placeholder="警告状态">
+		  </div>
+		  <div class="form-group has-error">
+		    <label class="control-label" for="inputError1">错误状态</label>
+		    <input type="text" class="form-control" id="inputError1" placeholder="错误状态">
+		  </div>
+		</form>  
+		<br>
+		<br>
+		<br>
+		<h3>示例2</h3>   
+		<form role="form">
+		  <div class="form-group has-success has-feedback">
+		    <label class="control-label" for="inputSuccess1">成功状态</label>
+		    <input type="text" class="form-control" id="inputSuccess1" placeholder="成功状态" >
+		    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+		  </div>
+		  <div class="form-group has-warning has-feedback">
+		    <label class="control-label" for="inputWarning1">警告状态</label>
+		    <input type="text" class="form-control" id="inputWarning1" placeholder="警告状态">
+		    <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+		  </div>
+		  <div class="form-group has-error has-feedback">
+		    <label class="control-label" for="inputError1">错误状态</label>
+		    <input type="text" class="form-control" id="inputError1" placeholder="错误状态">
+		    <span class="glyphicon glyphicon-remove form-control-feedback"></span>  
+		  </div>
+		</form>
+			
+		<!--表单提示help-block-->
+		<h3>示例1</h3>
+		<form role="form">
+		  <div class="form-group has-success has-feedback">
+		    <label class="control-label" for="inputSuccess1">成功状态</label>
+		    <input type="text" class="form-control" id="inputSuccess1" placeholder="成功状态" >
+		    <span class="help-block">你输入的信息是正确的</span>
+		    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+		  </div>
+		  <div class="form-group has-warning has-feedback">
+		    <label class="control-label" for="inputWarning1">警告状态</label>
+		    <input type="text" class="form-control" id="inputWarning1" placeholder="警告状态">
+		    <span class="help-block">请输入正确信息</span>
+		    <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+		  </div>
+		  <div class="form-group has-error has-feedback">
+		    <label class="control-label" for="inputError1">错误状态</label>
+		    <input type="text" class="form-control" id="inputError1" placeholder="错误状态">
+		    
+		    <span class="glyphicon glyphicon-remove form-control-feedback"></span>  
+		  </div>
+		</form>    
+		<br>
+		<br>
+		<br>
+		<h3>示例2</h3>
+		<form role="form">
+		  <div class="form-group">
+		    <label class="control-label" for="inputSuccess1">成功状态</label>
+		    <div class="row">
+		      <div class="col-xs-6">
+		        <input type="text" class="form-control" id="inputSuccess1" placeholder="成功状态" >
+		      </div>
+		       <span class="col-xs-6 help-block">你输入的信息是正确的</span>
+		    </div>
+		  </div> 
+		</form> 	
+		
+		<!--注意：虽然在Bootstrap框架中使用任何标签元素都可以实现按钮风格，
+		但个人并不建议这样使用，为了避免浏览器兼容性问题，
+		个人强烈建议使用button或a标签来制作按钮。-->
+	   <button class="btn" type="button">基础按钮.btn</button>  
+	   <button class="btn btn-default" type="button">默认按钮.btn-default</button> 
+	   <button class="btn btn-primary" type="button">主要按钮.btn-primary</button> 
+	   <button class="btn btn-success" type="button">成功按钮.btn-success</button> 
+	   <button class="btn btn-info" type="button">信息按钮.btn-info</button> 
+	   <button class="btn btn-warning" type="button">警告按钮.btn-warning</button> 
+	   <button class="btn btn-danger" type="button">危险按钮.btn-danger</button> 
+	   <button class="btn btn-link" type="button">链接按钮.btn-link</button> 
+   		
+   		<!--定制按钮大小-->
+   		<button class="btn btn-primary btn-lg" type="button">大型按钮.btn-lg</button> 
+	    <button class="btn btn-primary" type="button">正常按钮</button>
+	    <button class="btn btn-primary btn-sm" type="button">小型按钮.btn-sm</button>
+	    <br />
+	    <br />
+	    <!--块状按钮按钮宽度充满整个父容器（width:100%）-->
+	    <button class="btn btn-primary btn-lg btn-block" type="button">大型按钮.btn-lg</button> 
+	    <button class="btn btn-primary btn-block" type="button">正常按钮</button>
+	    <button class="btn btn-primary btn-sm btn-block" type="button">小型按钮.btn-sm</button>
+	    <button class="btn btn-primary btn-xs btn-block" type="button">超小型按钮.btn-xs</button>  
+	    <br />
+	    <br />
+    	<!--“.disabled”样式不会禁止按钮的默认行为，
+    	比如说提交和重置行为等。
+    	如果想要让这样的禁用按钮也能禁止按钮的默认行为，
+    	则需要通过JavaScript这样的语言来处理。
+    	对于<a>标签也存在类似问题，如果通过类名“.disable”来禁用按钮，
+    	其链接行为是无法禁止。
+    	而在元素标签中添加“disabled”属性的方法是可以禁止元素的默认行为的。-->
+    	<button class="btn btn-primary btn-lg btn-block" type="button" disabled="disabled">通过disabled属性禁用按钮</button> 
+		<button class="btn btn-primary btn-block disabled" type="button">通过添加类名disabled禁用按钮</button>
+		<button class="btn btn-primary btn-sm btn-block" type="button">未禁用的按钮</button>
+		<br />
+	    <br />
+	    <!--图片-->
+		<div class="container">
+		  <div class="row">
+		    <div class="col-sm-4">
+		      <img   alt="140x140" src="http://placehold.it/140x140">
+		        <div>默认图片</div>
+		    </div>
+		    <div class="col-sm-4">
+		      <img  class="img-rounded" alt="140x140" src="http://placehold.it/140x140"> 
+		        <div>圆角图片</div>
+		    </div>
+		    <div class="col-sm-4">
+		      <img  class="img-circle" alt="140x140" src="http://placehold.it/140x140">
+		        <div>圆形图片</div>
+		    </div>
+		      <div class="row">
+		        <div class="col-sm-6">
+		          <img  class="img-thumbnail" alt="140x140" src="http://placehold.it/140x140"> 
+		            <div>缩略图</div>
+		        </div>
+		        <div class="col-sm-6">
+		          <img  class="img-responsive" alt="140x140" src="http://placehold.it/140x140" /> 
+		          <div>响应式图片</div>
+		        </div>
+		      </div>
+		  </div>
+		</div> 
+		<!--图标-->
+		<span class="glyphicon glyphicon-search"></span>
+		<span class="glyphicon glyphicon-asterisk"></span>
+		<span class="glyphicon glyphicon-plus"></span>
+		<span class="glyphicon glyphicon-cloud"></span>
+	</body>
+</html>
